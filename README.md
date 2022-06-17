@@ -12,7 +12,8 @@ pip install chepy
 
 # Usage
 To analyze the traffic of a PCAP file, just enter the path of your PCAP and set the local port used by the malware.
-Example:
+
+Example of usage:
 ```
 python3 WarzoneDecryptor.py -s /PATH/TO/YOUR/PCAP.PCAP -p 5200
 ```
