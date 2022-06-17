@@ -3,8 +3,12 @@ Warzone RAT packet decryptor is a tool to detect and decrypt malicious packets r
 
 # Installation
 To use the script it is necessary to install the Scapy and Chepy libraries.
-`pip install scapy`
-`pip install chepy`
+```python
+pip install scapy
+```
+```python
+pip install chepy
+```
 
 # Usage
 To use it, just enter the path to your PCAP in line 161 of the code. Once you execute the script, you will have to set up the local port used by the malware.
