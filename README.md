@@ -11,5 +11,33 @@ pip install chepy
 ```
 
 # Usage
-To use it, just enter the path to your PCAP in line 161 of the code. Once you execute the script, you will have to set up the local port used by the malware.
+To analyze the traffic of a PCAP file, just enter the path of your PCAP and set the local port used by the malware.
+Example:
+```python
+python3 WarzoneDecryptor.py -s /PATH/TO/YOUR/PCAP.PCAP -p 5200
+```
+Output example:
+
+```python
+Warzone RAT activity detected in PCAP!!
+Affected packets [14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110]
+Packet nº 14 - 192.168.14.10:5200  -->  192.168.14.10:51974
+Machine info request detected
+
+Packet nº 16 - 192.168.14.10:51974  -->  192.168.14.10:5200
+Detected response from the infected machine
+
+}!=K,މ_ DESKTOP-3S9VQDLEB<
+
+Packet nº 18 - 192.168.14.10:5200  -->  192.168.14.10:51974
+Remote Shell request detected
+
+Packet nº 20 - 192.168.14.10:51974  -->  192.168.14.10:5200
+Detected response from the infected machine
+
+Microsoft Windows [Versin 10.0.19044.1645]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Windows\system32>
+```
 
